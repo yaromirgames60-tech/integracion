@@ -1,0 +1,9 @@
+{
+    "name": "@repo/backend",
+    "version": "0.1.0",
+    "scripts": {
+        "dev": ".venv\\Scripts\\activate.bat && uvicorn app.main:app --reload",
+        "postinstall": "python -m venv .venv && .venv\\Scripts\\activate.bat && pip install -r requirements.txt",
+        "seed": ".venv\\Scripts\\activate.bat && py -m app.database.seed"
+    }
+}

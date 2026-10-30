@@ -1,0 +1,19 @@
+{
+  "name": "ithub-frontend-integration",
+  "private": "true",
+  "version": "0.1.0",
+  "homepage": "https://github.com/ITHUB-SPB/ithub-frontend-integration#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ITHUB-SPB/ithub-frontend-integration.git"
+  },
+  "scripts": {
+    "dev:frontend": "npm run dev --workspace @repo/frontend",
+    "dev:backend": "npm run dev --workspace @repo/backend",
+    "db:seed": "npm run seed --workspace @repo/backend"
+  },
+  "workspaces": [
+    "apps/backend",
+    "apps/frontend"
+  ]
+}
